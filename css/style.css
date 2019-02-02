@@ -1,10 +1,24 @@
+body{
+  background: black;
+}
 img{
   width: 100%;
 }
 img.fresque{
   width: 100%;
-
 }
-a{
-align-content: center;
+a.button{
+color: white;
+display: block;
+text-align: center;
+}
+video#bgvid {
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: url(../images/video1.jpg) no-repeat;
+  background-size: cover;
+}
+h1{
+  text-align: center;
+  color: white;
 }
