@@ -8,7 +8,7 @@ img.fresque{
   width: 100%;
 }
 a.button{
-color: white;
+color: #da10e0;
 display: block;
 text-align: center;
 }
@@ -21,4 +21,20 @@ video#bgvid {
 h1{
   text-align: center;
   color: white;
+}
+h2{
+  text-align: center;
+  color: #da10e0;
+}
+
+section.fresque{
+background: linear-gradient(black,white);
+}
+section.end{
+  background: white;
+}
+a.buttonf{
+  color: #da10e0;
+  display: block;
+  text-align: center;
 }
