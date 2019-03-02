@@ -8,7 +8,7 @@ img.fresque{
   width: 100%;
 }
 a.button{
-color: #da10e0;
+color: white;
 display: block;
 text-align: center;
 }
@@ -24,17 +24,22 @@ h1{
 }
 h2{
   text-align: center;
-  color: #da10e0;
+  color: white;
 }
 
 section.fresque{
-background: linear-gradient(black,white);
+background: linear-gradient(to bottom,black,#da10e0);
 }
 section.end{
-  background: white;
+  background: #da10e0;
 }
 a.buttonf{
-  color: #da10e0;
+  color: white;
   display: block;
   text-align: center;
+}
+#fresque{
+width: 50%;
+display: block;
+margin: auto;
 }
