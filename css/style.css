@@ -1,14 +1,33 @@
 body{
   background: black;
 }
+header{
+  align-items: center;
+  text-align: center;
+  font-size: 50px
+}
 img{
   width: 100%;
+}
+img.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
 img.fresque{
   width: 100%;
 }
+a{
+  text-decoration: none;
+  color: white;
+  border: 10px;
+}
+a:hover{
+  text-shadow:0 0 20px #00FFFC,2px 3px 3px white, 0 0 100px #00D4D1;color:#da10e0;
+}
 a.button{
-color: white;
+font-size: 40px;
 display: block;
 text-align: center;
 }
@@ -34,7 +53,7 @@ section.end{
   background: #da10e0;
 }
 a.buttonf{
-  color: white;
+  font-size: 40px;
   display: block;
   text-align: center;
 }
