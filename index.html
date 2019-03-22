@@ -9,11 +9,17 @@
     <header>
       <nav>
         <div class="header">
-      <img class="logo" src="images/logo.png" alt="logo">
-      <div id="text">
-      <a href="#fresque">History</a>
-      <a href="#">Shop</a>
-      </div>
+      <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+  <defs>
+    <filter id="filter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.00001 0.00001" numOctaves="1" result="warp"></feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset" />
+    </filter>
+  </defs>
+</svg>
+      <a class="button" href="#fresque">History</a>
+      <a class="button" href="shop.html">Shop</a>
       </div>
       </nav>
     </header>
@@ -23,7 +29,7 @@
   <video autoplay loop poster="images/video1.jpg" id="bgvid">
     <source src="video/video1.mp4">
     </video>
-    <a class="button" href="#fin">End</a>
+    <a class="button" href="#fin">Je veux voyager dans le temps !</a>
   </div>
 </section>
 <section class="fresque">
@@ -31,14 +37,16 @@
   <path fill="none" stroke-linecap="round" stroke="white" stroke-width="2" id="fresque-path" d="M960,58V636.78l169,281.11v235.65L960,1403.65v376.21L704,1968v345.2l-91,407.21L469,3001.49l152,204.63H960v688.33l78,95.09-38,266.65H924V4866l129,235.64H666L674,5916H799v204.64H704l8,250.12H878v235.64h82v845.42L878,7640l23,140.56,59,126.09v547.77h55L1000,8657H960v279" transform="translate(-426.91 -22.13)"/>
   </svg>
   <balise id="fin"></balise>
-  <a class="buttonf"href="#top">top</a>
+  <a class="button"href="#top">top</a>
   </balise>
   </section>
   <section class="end">
-  <img src="images/2.jpg" alt="2">
+<balise id="fin"><img src="images/2.jpg" alt="2"></balise>
   </section>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   <script type="text/jscript" src="css/js/svgscrool.js"></script>
   <script type="text/jscript" src="css/js/scrool.js"></script>
+  <script type="text/jscript" src="css/js/btn.js"></script>
 </html>
