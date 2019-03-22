@@ -23,9 +23,7 @@ a{
   color: white;
   border: 10px;
 }
-a:hover{
-  text-shadow:0 0 20px #00FFFC,2px 3px 3px white, 0 0 100px #00D4D1;color:#da10e0;
-}
+
 a.button{
 font-size: 40px;
 display: block;
@@ -52,13 +50,33 @@ background: linear-gradient(to bottom,black,#da10e0);
 section.end{
   background: #da10e0;
 }
-a.buttonf{
-  font-size: 40px;
-  display: block;
-  text-align: center;
-}
+
 #fresque{
 width: 50%;
 display: block;
 margin: auto;
+}
+svg.svg-filters{
+  height: 10px;
+}
+.button {
+  border: 20px;
+  text-align: center;
+  font-size: 40px;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  text-decoration: none;
+  user-select: none;
+  letter-spacing: 1px;
+  color: white;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  Transition: background-color 0.1s ease-out;
+  -webkit-filter: url("#filter");
+  filter: url("#filter");
+}
+.button:hover {
+  text-shadow:0 0 20px #00FFFC,2px 3px 3px white, 0 0 100px #00D4D1;color:#da10e0;
 }
