@@ -1,5 +1,7 @@
 body{
   background: black;
+  height: 100%;
+    margin: 0;
 }
 header{
   align-items: center;
@@ -43,7 +45,14 @@ h2{
   text-align: center;
   color: white;
 }
-
+h3{
+  text-align: center;
+  color: white;
+}
+p{
+  text-align: center;
+  color: white;
+}
 section.fresque{
 background: linear-gradient(to bottom,black,#da10e0);
 }
@@ -79,4 +88,41 @@ svg.svg-filters{
 }
 .button:hover {
   text-shadow:0 0 20px #00FFFC,2px 3px 3px white, 0 0 100px #00D4D1;color:#da10e0;
+}
+.encre{
+  margin-top: 400px;
+}
+.hero-image {
+width: 100vw;
+height: 80vh;
+
+/* Flexbox stuff */
+display: flex;
+justify-content: center;
+align-items: center;
+
+/* Text styles */
+text-align: center;
+
+/* Background styles */
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-image: url("../images/encre.jpg");
+}
+.hero-text {
+  text-align: center;
+  color: white;
+}
+svg#fleche {
+display: block;
+padding-top: 150px;
+margin: auto;
+   fill: white;
+    width: 5%
+}
+svg#fleche:hover{
+     filter: drop-shadow(0px 5px 5px #00D4D1);
+  fill : #da10e0;
 }
