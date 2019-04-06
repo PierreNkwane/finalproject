@@ -1,3 +1,4 @@
+// Variable bouton pour appliquer une turbulence en fonction du clic une fois fini = restart
 var bt = document.querySelectorAll('.button')[0];
 var turbVal = { val: 0.000001 };
 var turb = document.querySelectorAll('#filter feTurbulence')[0];
