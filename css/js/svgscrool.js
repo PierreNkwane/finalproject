@@ -1,28 +1,24 @@
-// Get a reference to the <path>
+// Prend l'id du svg
 var path = document.querySelector('#fresque-path');
 
-// Get length of path... ~577px in this case
+// Prend la longueur total du svg
 var pathLength = path.getTotalLength();
 
-// Make very long dashes (the length of the path itself)
+// Fait de long traits
 path.style.strokeDasharray = pathLength + ' ' + pathLength;
 
-// Offset the dashes so the it appears hidden entirely
+// Fait apparaitre les traits entièrement
 path.style.strokeDashoffset = pathLength;
 
-// Jake Archibald says so
-// https://jakearchibald.com/2013/animated-line-drawing-svg/
 path.getBoundingClientRect();
 
-// When the page scrolls...
+// Lorsqu'on scroll
 window.addEventListener("scroll", function(e) {
 
-  // What % down is it?
-  // https://stackoverflow.com/questions/2387136/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript/2387222#2387222
-  // Had to try three or four differnet methods here. Kind of a cross-browser nightmare.
+  // Récupération du pourcentage du scroll
   var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 
-  // Length to offset the dashes
+  // réglage d'apparition
   if (scrollPercentage > 0.08) {
   var drawLength = pathLength * (scrollPercentage - 0.08);
 }
@@ -32,11 +28,10 @@ window.addEventListener("scroll", function(e) {
 if (scrollPercentage > 0.570) {
 var drawLength = pathLength * (1.14*scrollPercentage - 0.08);
 }
-  // Draw in reverse
+  // Effacement du trait
   path.style.strokeDashoffset = pathLength - drawLength;
 
-  // When complete, remove the dash array, otherwise shape isn't quite sharp
- // Accounts for fuzzy math
+  // Garde la frome net
   if (scrollPercentage >= 0.99) {
     path.style.strokeDasharray = "none";
 
