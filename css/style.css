@@ -6,7 +6,8 @@ body{
 header{
   align-items: center;
   text-align: center;
-  font-size: 50px
+  font-size: 50px;
+  margin-bottom: 100px
 }
 img{
   width: 100%;
@@ -32,9 +33,9 @@ display: block;
 text-align: center;
 }
 video#bgvid {
-  min-width: 100%; min-height: 100%;
-  width: auto; height: auto; z-index: -100;
-  background: url(../images/video1.jpg) no-repeat;
+  width: 100%;
+  height: auto;
+  z-index: -100;
   background-size: cover;
 }
 h1{
@@ -68,7 +69,7 @@ margin: auto;
 svg.svg-filters{
   height: 10px;
 }
-.button {
+.nav {
   border: 20px;
   text-align: center;
   font-size: 40px;
@@ -86,10 +87,10 @@ svg.svg-filters{
   -webkit-filter: url("#filter");
   filter: url("#filter");
 }
-.button:hover {
+.nav:hover {
   text-shadow:0 0 20px #00FFFC,2px 3px 3px white, 0 0 100px #00D4D1;color:#da10e0;
 }
-.encre{
+.itemshop{
   margin-top: 400px;
 }
 .hero-image {
@@ -102,17 +103,33 @@ justify-content: center;
 align-items: center;
 
 /* Text styles */
-text-align: center;
 
 /* Background styles */
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
 background-attachment: fixed;
-background-image: url("../images/encre.jpg");
+background-image: url("../images/tattoo.jpg");
+}
+.hero-image2 {
+width: 100vw;
+height: 80vh;
+
+/* Flexbox stuff */
+display: flex;
+justify-content: center;
+align-items: center;
+
+/* Text styles */
+
+/* Background styles */
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-image: url("../images/2.jpg");
 }
 .hero-text {
-  text-align: center;
   color: white;
 }
 svg#fleche {
@@ -125,4 +142,48 @@ margin: auto;
 svg#fleche:hover{
      filter: drop-shadow(0px 5px 5px #00D4D1);
   fill : #da10e0;
+}
+img.encre{
+  float: left;
+  margin-top: 150px;
+  width: 50%;
+  margin-bottom: 200px;
+}
+h1.txtshop{
+  padding-top: 150px;
+  text-align: right;
+    padding-right: 300px;
+}
+p.txtshop{
+  text-align: right;
+  padding-right: 300px;
+}
+img.machine{
+  float: right;
+  margin-top: 150px;
+  width: 50%;
+}
+h1.txtshop2{
+  padding-top: 150px;
+  text-align: left;
+    padding-left: 300px;
+}
+p.txtshop2{
+  text-align: left;
+  padding-left: 300px;
+}
+#controles {
+  position: relative;
+  top: -550px;
+}
+
+button {
+    display: block;
+    align-items: center;
+    margin: auto;
+    color: white;
+    border:none;
+    background-color: transparent;
+    /* width: 500px; */
+    font-size: 50px;
 }

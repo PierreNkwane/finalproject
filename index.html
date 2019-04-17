@@ -18,18 +18,20 @@
     </filter>
   </defs>
 </svg>
-      <a class="button" href="#fresque">History</a>
-      <a class="button" href="shop.html">Shop</a>
+      <a class="nav" href="#fresque">History</a>
+      <a class="nav" href="shop.html">Shop</a>
       </div>
       </nav>
     </header>
 <section>
 <div class="video1">
 <balise id="top"></balise>
-  <video autoplay loop poster="images/video1.jpg" id="bgvid">
+  <video controls id="bgvid">
     <source src="video/video1.mp4">
     </video>
-    <a class="button" href="#fin">Je veux voyager dans le temps !</a>
+    <div id="controles" hidden>
+    </div>
+    <a class="nav" href="#fin">Je veux voyager dans le temps !</a>
   </div>
 </section>
 <section class="fresque">
@@ -37,13 +39,14 @@
   <path fill="none" stroke-linecap="round" stroke="white" stroke-width="2" id="fresque-path" d="M960,58V636.78l169,281.11v235.65L960,1403.65v376.21L704,1968v345.2l-91,407.21L469,3001.49l152,204.63H960v688.33l78,95.09-38,266.65H924V4866l129,235.64H666L674,5916H799v204.64H704l8,250.12H878v235.64h82v845.42L878,7640l23,140.56,59,126.09v547.77h55L1000,8657H960v279" transform="translate(-426.91 -22.13)"/>
   </svg>
   <balise id="fin"></balise>
-  <a class="button"href="#top">top</a>
+  <a class="nav"href="#top">top</a>
   </balise>
   </section>
   <section class="end">
 <balise id="fin"><img src="images/2.jpg" alt="2"></balise>
   </section>
   </body>
+  <script type="text/jscript" src="css/js/controlvid.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   <script type="text/jscript" src="css/js/svgscrool.js"></script>
